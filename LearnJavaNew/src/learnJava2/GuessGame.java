@@ -10,9 +10,11 @@ public class GuessGame {
         GuessGame g=new GuessGame();
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter a number between 1 to 10: ");
+        int inputnum=(int)(Math.random()*10);
+		System.out.print(inputnum);
         int num=sc.nextInt();
         sc.close();
-		int inputnum=(int)(Math.random()*10);
+		
 		if(num==inputnum)
 		System.out.println("Well done ur guess is correct :)");
 		else
